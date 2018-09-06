@@ -1,0 +1,12 @@
+Bank Name / Type,Number of Beneficiaries at rural/semiurban centre bank branches,Number of Beneficiaries at urban metro centre bank branches,Number of Total Beneficiaries,Deposits in Accounts(In lac),Number of Rupay Debit Cards issued to beneficiaries,level,date
+Public Sector Banks,4029772,2754484,6784256,10466.93,1703977,Summary,2014-10-01
+Regional Rural Banks,198184,91256,289440,0.00,48719,Summary,2014-10-01
+Grand Total,4227956,2845740,7073696,10466.93,1752696,Summary,2014-10-01
+Canara Bank,1774285,946200,2720485,3104.81,113798,(A) Public Sector Banks,2014-10-01
+Syndicate Bank,1163372,691817,1855189,2.42,618289,(A) Public Sector Banks,2014-10-01
+UCO Bank,791743,846370,1638113,6628.86,619740,(A) Public Sector Banks,2014-10-01
+Vijaya Bank,300372,270097,570469,730.83,352150,(A) Public Sector Banks,2014-10-01
+Public Sector Banks Sub Total,4029772,2754484,6784256,10466.93,1703977,(A) Public Sector Banks,2014-10-01
+Canara Bank,198184,91256,289440,0.00,48719,(B) Regional Rural Bank,2014-10-01
+Regional Rural Banks Sub Total,198184,91256,289440,0.00,48719,(B) Regional Rural Bank,2014-10-01
+Major Private Banks Sub Total,,,,,,(C) Major Private Banks,2014-10-01

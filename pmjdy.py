@@ -79,7 +79,7 @@ def get_back():
     last_date = re.search(r'{"endDate":"(.*)","format', html)
     last_date = pd.to_datetime(last_date.group(1) if last_date else 'now')
     # Last Wednesday
-    date = last_date - pd.Timedelta(days=last_date.dayofweek-2)
+    date = last_date.replace(tzinfo=None) - pd.Timedelta(days=last_date.dayofweek-2)
     html = get_page(date, params)
     create_csv(date, html)
     end_date = pd.to_datetime('2014-09-20')
@@ -101,10 +101,10 @@ def create_csv(date, text):
         log.error('File for %s has no (6) tables', date)
         return
     level = 'Summary'
-    columns = dfs[2].iloc[0].values.tolist()
+    columns = dfs[2].columns
     data = []
     for df in dfs[2:]:
-        _df = df.iloc[1:-1, :].copy()
+        _df = df.iloc[0:-1, :].copy()
         _df.columns = columns
         _df['level'] = level
         data.append(_df)
